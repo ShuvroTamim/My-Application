@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fece2f"
+    tools:context=".SelectionActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="#fece2f">
+
+        <Button
+            android:id="@+id/schedule"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/aclonica"
+            android:text="Schedule"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tracker"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/schedule"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/aclonica"
+            android:text="Location"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnsheba"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/tracker"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/aclonica"
+            android:text="E-Sheba"
+            android:onClick="sheba"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#fece2f"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SearchTrain">
+
+
+    <SearchView
+        android:id="@+id/srchtrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/background2"
+        android:iconifiedByDefault="false"
+        android:queryHint="Select Train ..." />
+
+    <ListView
+        android:id="@+id/trainlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/srchtrain"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
